@@ -13,7 +13,7 @@ def scrape_all():
 
     news_title, news_paragraph = mars_news(browser)
 
-    # Run all scraping functions and store results in dictionary
+    # Run all scraping functions and store results in dictionary 
     data = {
         "news_title": news_title,
         "news_paragraph": news_paragraph,
