@@ -1,1 +1,2 @@
-# Mission-to_mars
+# Web Scraping for Mars Data
+This repository contains Python code that scrapes for news, data, and images from Mars. The flask app included runs the scraping code to save data into a Mongo DB database and also display scraped material on a page rendered in HTML
