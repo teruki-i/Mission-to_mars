@@ -16,7 +16,7 @@ def index():
     # use PyMongo to find "mars" collection in database
     mars = mongo.db.mars.find_one()
     # return HTML template using index.html file
-    # use "mars" collection
+    # use "mars" collection 
     return render_template("index.html", mars=mars)
 
 # create scraping route
