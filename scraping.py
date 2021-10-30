@@ -19,7 +19,7 @@ def scrape_all():
         "news_paragraph": news_paragraph,
         "featured_image": featured_image(browser),
         "facts": mars_facts(),
-        "hemispheres": hemispheres(),
+        "hemispheres": hemispheres(browser),
         "last_modified": dt.datetime.now()
     }
 
@@ -102,7 +102,7 @@ def mars_facts():
     # Convert DataFrame into HTML format, add bootstrap
     return df.to_html(classes="table table-striped")
 
-def hemispheres():
+def hemispheres(browser):
 
     #Use browser to visit the URL 
     url = 'https://marshemispheres.com/'
